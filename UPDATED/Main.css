@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    max-height: 100px;
+}
+
+/* Header Styling */
+header {
+    background-color: #004080;
+    padding: 20px 0;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    flex: 1;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    background-color: transparent;
+    border-bottom: 2px solid yellow;
+}
+
+h3 {
+    display: inline;
+    font-size: 20px;
+    color: yellow;
+}
+
+
+.appointment{
+    background-color: #004080;
+    text-align: center;
+    border: 2px solid black ;
+    padding: 10px;
+    animation: mymove 2s infinite;
+    text-decoration: none;
+}
+
+.appointment a {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 28px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+/* Slider Section */
+.slider {
+    position: relative;
+    width: 100%;
+    max-height: auto;
+    overflow: hidden;
+}
+
+/* Slides */
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Fade Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}

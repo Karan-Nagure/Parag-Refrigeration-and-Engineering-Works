@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parag Refrigations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="title">
+        <div class="title1">
+            
+        </div>
+
+    </div>
+    <header>
+        <div class="container-box">
+            <!-- Main Title with Symbol -->
+            <img src="static\images\1724244181500.png" alt="Company Logo" class="logo">
+            <h1>❄️PARAG Refrigeration & Engineering Works </h1>
+            
+            <br/><br/>
+        </div>
+    </header>
+
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('Products') }}">Products</a>  <!--dropdown 1.Products 2.Services-->
+        <a href="{{ url_for('Services') }}">Services</a>
+        <a href="{{ url_for('Testimonial') }}">Testimonial</a>
+        <a href="{{ url_for('form_k') }}">Enquiry</a>
+        <a href="{{ url_for('contact') }}">contact</a>
+        <a href="{{ url_for('about') }}">about</a>
+    </div>
+    <br>
+    <br>
+
+    <div class="about_us">
+        <h3>Welcome to PARAG Refrigeration & Engineering Works, your trusted partner in advanced refrigeration and engineering solutions. With a proud legacy spanning over 7 years, we have established ourselves as industry leaders, providing top-notch refrigeration services to commercial, industrial, and institutional clients. Our expertise lies in designing, installing, and maintaining state-of-the-art refrigeration systems that ensure your operations run smoothly, efficiently, and reliably.
+            <br><br><br>
+            At PARAG Refrigeration & Engineering Works, we are committed to excellence, and our reputation is built on delivering high-quality services that exceed our clients' expectations. We offer a comprehensive range of solutions, including:
+            <br><br><br>
+            Customized Refrigeration Systems: Whether you need large-scale industrial refrigeration or specialized cooling systems for food processing, pharmaceuticals, or cold storage, we design solutions tailored to your exact requirements.
+            <br><br>
+            Energy-Efficient Solutions: Our systems are engineered to minimize energy consumption while maximizing performance. We prioritize sustainable technologies that not only reduce costs but also lessen environmental impact.
+            <br><br>
+            Installation Services: Our experienced team of engineers and technicians ensures that your refrigeration systems are installed seamlessly, adhering to the highest standards of safety and functionality.
+            <br><br>
+            Preventive Maintenance and Repairs: To keep your systems running at peak performance, we offer preventive maintenance programs that identify potential issues before they become problems. Our 24/7 emergency repair services ensure that any disruptions to your operations are resolved swiftly and efficiently.
+            <br><br>
+            Engineering Consultation: We work closely with our clients from concept to completion, offering expert consultation services to guide you in selecting the right system based on your operational needs and budget.
+            <br><br>
+            Temperature Control and Monitoring Systems: For industries requiring precise temperature control, we provide advanced monitoring systems that allow real-time tracking and adjustments to ensure the integrity of your products or processes.
+            <br><br><br>
+            What sets [Your Company Name] apart is our commitment to quality, innovation, and customer satisfaction. We combine cutting-edge technology with hands-on expertise to provide refrigeration solutions that are not only reliable but also built to last.
+            <br><br><br>
+            Our team of highly trained engineers, technicians, and project managers are passionate about delivering excellence in every project we undertake. We pride ourselves on a client-first approach, ensuring that each project is delivered on time, within budget, and tailored to meet your specific needs.
+            <br><br><br>
+            Our Mission
+            <br><br>
+            Our mission is to deliver superior refrigeration and engineering services that enhance the productivity and sustainability of our clients’ operations. By embracing the latest technological advancements and adhering to the highest standards of workmanship, we aim to be your preferred partner for all your refrigeration needs.
+            <br><br>
+            Why Choose Us?
+            <br>
+            Proven track record of success in diverse industries
+            <br>
+            Commitment to innovation, efficiency, and sustainability
+            <br>
+            Personalized service with a focus on long-term partnerships
+            <br>
+            24/7 support and maintenance to ensure uninterrupted operations <br>
+            Competitive pricing and cost-effective solutions <br>
+            <br>
+            <br>
+            Discover the difference that experience, expertise, and dedication can make. Trust [Your Company Name] for all your refrigeration and engineering needs.</h3>
+            <br>
+            <br><br><br>
+
+            
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <img id="photo-logo" src="static\images\parag_logo2.png" alt="logo" style="width: 10%; height: 15%;">
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <p><a href="{{ url_for('form_k') }}"> WANTS TO ENQUIRE</a></p>
+                    
+                </div>
+                <div class="column">
+                    <p><a href="{{ url_for('Services') }}">SERVICES</a></p>
+                    <p><a href="{{ url_for('Products') }}">PRODUCTS</a></p>
+                </div>
+                <div class="column">
+                    <p>SHOWCASE</p>
+                    <p><a href="{{ url_for('Blog') }}">BLOG</a></p>
+                    <p><a href="{{ url_for('Testimonial') }}">TESTIMONIAL</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="{{ url_for('about') }}">ABOUT US</a></p>
+                    <p><a href="{{ url_for('contact') }}">CONTACT US</a></p>
+                    <p>AFFILIATES</p>
+                    <p>RESOURCES</p>
+                </div>
+                <div class="column">
+                    <p><a href="https://www.linkedin.com/in/karan-nagure/">DEVELOPERS</a></p>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/karan-nagure/"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; Copyright. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

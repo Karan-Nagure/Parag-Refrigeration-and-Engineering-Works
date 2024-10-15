@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Care India Request Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2,h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            appearance: none;
+        }
+
+        /* input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        } */
+
+        .box {
+    width: 100px;
+    height: 35px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+   
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Submit your Request</h1>
+
+        <form action="/submit" method="POST">
+            <h3>Basic Details:</h3>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="Number">10 Digit Mobile Number:</label>
+                <input type="number" id="Number" name="Number" required>
+            </div>
+            <div class="form-group">
+                <label for="PinCode">Enter Pin Code:</label>
+                <input type="number" id="PinCode" name="PinCode" required>
+            </div>
+            <div class="form-group">
+                <label for="Category">Select Category:</label>
+                <select id="Category" name="Category" required>
+                    <option value="">Choose a category</option>
+                    <option value="Air Conditioning">Air Conditioning</option>
+                    <option value="Window AC">Window AC</option>
+                    <option value="Water Chillers">Water Chillers</option>
+                    <option value="Air Dryers">Air Dryers</option>
+                    <option value="Panel Cooler">Panel Cooler</option>
+                    <option value="Ductable AC">Ductable AC</option>
+                    <option value="Laboratory Incubator">Laboratory Incubator</option>
+                    <option value="Deep Freezer">Deep Freezer</option>
+                    <option value="Cassette AC">Cassette AC</option>
+                    <option value="Oven">Oven</option>
+                    <option value="Refrigarator">Refrizarator</option>
+                    <option value="Other">Other</option>
+                    
+
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="State">State Name:</label>
+                <input type="text" id="State" name="State" placeholder="State">
+            </div>
+            <div class="form-group">
+                <label for="City">City Name:</label>
+                <input type="text" id="City" name="City" placeholder="City">
+            </div>
+
+            <h3>Address:</h3>
+            <!-- <div class="form-group">
+                <label for="houseNo">House No./Building No.:</label>
+                <input type="text" id="houseNo" name="houseNo" required>
+            </div>
+            <div class="form-group">
+                <label for="roadName">Road Name/Area:</label>
+                <input type="text" id="roadName" name="roadName" required>
+            </div> -->
+            <div class="form-group">
+                <!-- <label for="landmark">Near by famous Place/Shope/School, etc...:</label> -->
+                
+                <textarea id="Address" name="Address" rows="3"></textarea>
+            </div>
+
+            <!-- <input type="submit" value="NEXT"> -->
+            <!-- <div class="box"> -->
+                <input type="submit"value="Submit">
+            <!-- </div> -->
+        </form>
+    </div>
+
+</body>
+</html>

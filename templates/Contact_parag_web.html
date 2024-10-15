@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parag Refrigations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="title">
+        <div class="title1">
+            
+        </div>
+
+    </div>
+    <header>
+        <div class="container-box">
+            <!-- Main Title with Symbol -->
+            <img src="static\images\1724244181500.png" alt="Company Logo" class="logo">
+            <h1>❄️PARAG Refrigeration & Engineering Works </h1>
+            
+            <br/><br/>
+        </div>
+    </header>
+
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('Products') }}">Products</a>  <!--dropdown 1.Products 2.Services-->
+        <a href="{{ url_for('Services') }}">Services</a>
+        <a href="{{ url_for('Testimonial') }}">Testimonial</a>
+        <a href="{{ url_for('form_k') }}">Enquiry</a>
+        <a href="{{ url_for('contact') }}">contact</a>
+        <a href="{{ url_for('about') }}">about</a>
+    </div>
+
+
+    <header-c>
+        <div class="container_contactus">
+            <h1>Contact Us</h1>
+            <p>We're here to help with all your refrigeration and engineering needs. Feel free to reach out to us via the methods below.</p>
+        </div>
+    </header-c>
+
+    <section class="contact-info_contactus">
+        <div class="container_contactus">
+            <div class="contact-method">
+                <h2>Phone</h2>
+                <p>Call us at <strong>+123 456 7890</strong> for immediate assistance. Our lines are open from <strong>9:00 AM - 6:00 PM</strong>.</p>
+            </div>
+            <div class="contact-method">
+                <h2>Email</h2>
+                <p>Send us an email at <a href="mailto:info@refrigerationworks.com">info@refrigerationworks.com</a>, and we’ll get back to you within 24 business hours.</p>
+            </div>
+            <div class="contact-method">
+                <h2>Office Address</h2>
+                <p>Visit us at:</p>
+                <p><strong>Ambedkar Chowk, Shahapur<br>Ichalkaranji, Maharashtra, 416115</strong></p>
+            </div>
+            <div class="contact-method">
+                <h2>Emergency Support</h2>
+                <p>For urgent matters, call our 24/7 emergency hotline at <strong>+123 456 7890</strong>.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
