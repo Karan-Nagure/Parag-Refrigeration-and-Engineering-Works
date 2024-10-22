@@ -1,0 +1,35 @@
+CREATE DATABASE Form_Details;
+
+use Form_details;
+
+CREATE TABLE form
+(Name VARCHAR(30),
+ Email VARCHAR(30),
+ Number NUMERIC(10),
+ PinCode numeric(6),
+ Category VARCHAR(25),
+ State VARCHAR(30),
+ City VARCHAR(30),
+ Address VARCHAR(100)
+);
+
+SHOW DATABASES;
+
+INSERT INTO form(Name,Email,Number,PinCode, Category, State, City, Address)
+VALUES
+('karan','abc@gmail.com', 8308494936, 416115, 'AC', 'MH', 'Ich', 'shahapur');
+
+SELECT * FROM form;
+
+
+
+CREATE TABLE Login
+(Email VARCHAR(30),
+ password VARCHAR(30)
+);
+
+INSERT INTO Login(Email, password)
+VALUES
+('Suyash@gmail.com', 'Pass@12345');
+
+SELECT * FROM Login;

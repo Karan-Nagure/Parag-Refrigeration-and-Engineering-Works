@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parag Refrigerations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <style>
         .b {
             text-align: center;
@@ -11,9 +12,41 @@
     </style>
 </head>
 <body>
+
+    <div class="title">
+        <div class="title1">
+            
+        </div>
+
+    </div>
+
+    <header>
+        <div class="container-box">
+            <!-- Main Title with Symbol -->
+            <img src="static\images\1724244181500.png" alt="Company Logo" class="logo">
+            <h1>❄️PARAG Refrigeration & Engineering Works </h1>
+            
+            <br/><br/>
+        </div>
+    </header>
+
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('Products') }}">Products</a>  <!--dropdown 1.Products 2.Services-->
+        <a href="{{ url_for('Services') }}">Services</a>
+        <a href="{{ url_for('Testimonial') }}">Testimonial</a>
+        <a href="{{ url_for('form_k') }}">Enquiry</a>
+        <a href="{{ url_for('contact') }}">contact</a>
+        <a href="{{ url_for('about') }}">about</a>
+    </div>
+    <br>
+    <br>
+
     <div class="b">
         <h1>Thank you for enquiry, we will get back to you soon</h1>
         <a href="{{ url_for('home') }}">Home</a>
     </div>
+
+    <br><br><br><br>
 </body>
 </html>

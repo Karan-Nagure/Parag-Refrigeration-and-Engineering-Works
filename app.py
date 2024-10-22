@@ -1,14 +1,10 @@
 from flask import Flask, render_template, request, redirect
 import MySQLdb
-# import my_sql
-
+import my_sql
 app = Flask(__name__)
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
-
 
 @app.route('/form_k')
 def form_k():
@@ -31,10 +27,8 @@ def submit():
 
     # Execute SQL query to insert data
     my_sql.my_cursor.execute("INSERT INTO Form_Details.form (Name, Email, Number, PinCode, Category, State, City, Address) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)", (Name, Email, Number, PinCode, Category, State, City, Address))
-
     # Commit to the database
     my_sql.mydb.commit()
-
     # Redirect to a thank you page or back to the form
     return redirect('/ThankYou')
 
@@ -46,15 +40,13 @@ def ThankYou():
 def home():
     return render_template('index.html')
 
-
 @app.route('/Products')
 def Products():
-    return render_template('products_parag_web.html')
-
+    return render_template('products_parag_web_H.html')
 
 @app.route('/Services')
 def Services():
-    return render_template('Services_parag_web.html')
+    return render_template('Services_parag_web_H.html')
 
 
 @app.route('/contact')
@@ -69,7 +61,7 @@ def Blog():
 
 @app.route('/Testimonial')
 def Testimonial():
-    return render_template('Testimonial_parag_web.html')
+    return render_template('Testimonial_parag_web_H.html')
 
 
 @app.route('/about')

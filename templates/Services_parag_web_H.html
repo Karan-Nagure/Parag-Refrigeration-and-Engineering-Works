@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parag Refrigeration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .serv-1 {
+            margin-bottom: 40px; /* Consistent spacing between each service */
+        }
+        .serv-1 img {
+            display: block;
+            margin: 20px auto; /* Space between image and service description */
+        }
+        .serv-1 p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <div class="title1"></div>
+    </div>
+
+    <header>
+        <div class="container-box">
+            <!-- Main Title with Symbol -->
+            <img src="static/images/1724244181500.png" alt="Company Logo" class="logo">
+            <h1>❄️PARAG Refrigeration & Engineering Works</h1>
+        </div>
+    </header>
+
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('Products') }}">Products</a>
+        <a href="{{ url_for('Services') }}">Services</a>
+        <a href="{{ url_for('Testimonial') }}">Testimonial</a>
+        <a href="{{ url_for('form_k') }}">Enquiry</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('about') }}">About</a>
+    </div>
+    <br><br>
+
+    <div class="serv-1" id="serv--1">
+        <div id="data-1">
+            <a href="sample.html" id="topic-1"><h1>Air Conditioning</h1></a>
+            <p id="topic-2">
+                Diagnostics & Troubleshooting - Identify cooling system issues.<br>
+                Compressor Replacement - Repair faulty compressors.<br>
+                Refrigerant Leak Detection & Refill - Fix refrigerant leaks.<br>
+                Thermostat Calibration & Repair - Ensure thermostat accuracy.<br>
+                Duct Cleaning & Airflow Optimization - Clean air ducts.<br>
+                Full System Tune-up - Comprehensive check of filters and fans.<br>
+                Seasonal Maintenance Plans - Regular maintenance to improve efficiency.
+            </p>
+        </div>
+        <img src="static/images/AC.jpg" id="photo-1" alt="Air Conditioning" style="width: 40%; height: 50%;">
+    </div>
+
+    <div class="serv-1" id="serv--2">
+        <div id="data-1">
+            <a id="topic-1"><h1>Water Chillers</h1></a>
+            <p id="topic-2">
+                Chiller Diagnostics & Repairs - Troubleshoot mechanical and electrical issues.<br>
+                Compressor Repair & Replacement - Ensure compressor efficiency.<br>
+                Condenser Cleaning - Remove blockages and clean condensers.<br>
+                Leak Detection & Repair - Identify and fix leaks.<br>
+                Pump & Valve Repair - Fix malfunctioning pumps and valves.<br>
+                Energy Efficiency Optimization - Improve performance to reduce energy consumption.<br>
+                Preventative Maintenance - Regular servicing to ensure smooth operation.
+            </p>
+        </div>
+        <img src="static/images/water_chillers.jpg" id="photo-1" alt="Water Chillers" style="width: 40%; height: 50%;">
+    </div>
+
+    <div class="serv-1" id="serv--3">
+        <div id="data-1">
+            <a id="topic-1"><h1>Air Dryers</h1></a>
+            <p id="topic-2">
+                Air Dryer Diagnostics - Identify air flow, filtration, or cooling issues.<br>
+                Desiccant Replacement - Replace moisture-absorbing desiccants.<br>
+                Refrigerant Leak Repairs - Fix leaks in the refrigerant systems.<br>
+                Heat Exchanger Repairs - Replace faulty heat exchangers.<br>
+                Fan Motor & Electrical Repairs - Address electrical or fan issues.<br>
+                Preventative Maintenance - Regular checkups for efficiency and longevity.
+            </p>
+        </div>
+        <img src="static/images/air dryer.jpeg" id="photo-1" alt="Air Dryers" style="width: 40%; height: 50%;">
+    </div>
+
+    <div class="serv-1" id="serv--4">
+        <div id="data-1">
+            <a id="topic-1"><h1>Panel Coolers</h1></a>
+            <p id="topic-2">
+                Fault Diagnosis & Repair - Troubleshoot cooling issues.<br>
+                Filter Replacement & Cleaning - Clean and replace air filters.<br>
+                Cooling Element Repairs - Fix cooling components.<br>
+                Thermostat Adjustment - Regulate the cooling system to avoid overheating.<br>
+                Compressor & Fan Maintenance - Check and service compressors and fans.<br>
+                Energy Efficiency Improvement - Optimize the cooler for better energy performance.
+            </p>
+        </div>
+        <img src="static/images/panel cooler.jpg" id="photo-1" alt="Panel Coolers" style="width: 40%; height: 50%;">
+    </div>
+
+    <div class="serv-1" id="serv--5">
+        <div id="data-1">
+            <a id="topic-1"><h1>Oven</h1></a>
+            <p id="topic-2">
+                Heating Element Replacement - Fix faulty heating elements.<br>
+                Thermostat Calibration & Repair - Ensure accurate temperature regulation.<br>
+                Control Board Repairs - Diagnose and fix control board issues.<br>
+                Door Seal Replacement - Replace damaged seals to prevent heat leakage.<br>
+                Fan and Motor Servicing - Repair malfunctioning oven fans.<br>
+                Igniter Repairs (for gas ovens) - Replace faulty igniters.<br>
+                Oven Light Repairs - Fix broken oven lights.
+            </p>
+        </div>
+        <img src="static/images/oven repair.webp" id="photo-1" alt="Oven" style="width: 40%; height: 50%;">
+    </div>
+
+    <div class="serv-1" id="serv--6">
+        <div id="data-1">
+            <a id="topic-1"><h1>Refrigerator</h1></a>
+            <p id="topic-2">
+                Compressor Repair/Replacement - Diagnose and repair issues with the refrigerator compressor.<br>
+                Condenser Coil Cleaning - Clean dirty or clogged condenser coils for efficient cooling.<br>
+                Temperature Control Repairs - Fix malfunctioning thermostats and sensors.<br>
+                Defrost System Repairs - Address issues related to the refrigerator’s defrost cycle.<br>
+                Leak Detection & Repair - Identify and fix leaks in the refrigerator.<br>
+                Door Seal/Gasket Replacement - Replace faulty or damaged door seals to prevent air leaks.<br>
+                Evaporator Fan Repairs - Repair or replace faulty fans to ensure proper airflow and cooling.
+            </p>
+        </div>
+        <img src="static/images/refri.jpg" id="photo-1" alt="Refrigerator" style="width: 40%; height: 50%;">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <img id="photo-logo" src="static\images\parag_logo2.png" alt="logo" style="width: 20%; height: 35%;">
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <p><a href="{{ url_for('form_k') }}"> WANTS TO ENQUIRE</a></p>
+                    
+                </div>
+                <div class="column">
+                    <p><a href="{{ url_for('Services') }}">SERVICES</a></p>
+                    <p><a href="{{ url_for('Products') }}">PRODUCTS</a></p>
+                </div>
+                <div class="column">
+                    <p>SHOWCASE</p>
+                    <p><a href="{{ url_for('Blog') }}">BLOG</a></p>
+                    <p><a href="{{ url_for('Testimonial') }}">TESTIMONIAL</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="{{ url_for('about') }}">ABOUT US</a></p>
+                    <p><a href="{{ url_for('contact') }}">CONTACT US</a></p>
+                    <p>AFFILIATES</p>
+                    <p>RESOURCES</p>
+                </div>
+                <div class="column">
+                    <p><a href="https://www.linkedin.com/in/karan-nagure/">DEVELOPERS</a></p>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/karan-nagure/"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; Copyright. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

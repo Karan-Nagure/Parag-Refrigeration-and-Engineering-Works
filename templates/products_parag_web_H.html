@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parag Refrigations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- <div class="title">
+        <h1>PARAG</h1>
+        <h3>Refrigerations And Air Conditioning Engineers</h3>
+        <h5>Prop. Prakash Kamble</h5>
+    </div> -->
+    <div class="title">
+        <div class="title1">
+            
+        </div>
+
+    </div>
+    <header>
+        <div class="container-box">
+            <!-- Main Title with Symbol -->
+            <img src="static\images\1724244181500.png" alt="Company Logo" class="logo">
+            <h1>❄️PARAG Refrigeration & Engineering Works </h1>
+            
+            <br/><br/>
+        </div>
+    </header>
+
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('Products') }}">Products</a>  <!--dropdown 1.Products 2.Services-->
+        <a href="{{ url_for('Services') }}">Services</a>
+        <a href="{{ url_for('Testimonial') }}">Testimonial</a>
+        <a href="{{ url_for('form_k') }}">Enquiry</a>
+        <a href="{{ url_for('contact') }}">contact</a>
+        <a href="{{ url_for('about') }}">about</a>
+    </div>
+
+    <br><br>
+
+    <div class="products_page">
+
+        <div class="product1">
+            <div class="image-container">
+              <img src="static\images\FRIDGE.jpg" alt="Laptop">
+            </div>
+            <div class="box-title">Refrigirator</div>
+            <div class="price">11,870</div>
+            <div class="description">
+              these essential appliances are designed to keep food fresh by maintaining a low internal temperature. Common issues include compressor failures, frost buildup due to faulty defrost systems, water leakage from clogged drains, and malfunctioning thermostats that affect temperature control. Regular cleaning of condenser coils and ensuring the door seals are intact can help maintain efficiency.
+            </div>
+            <!-- <button class="button">ADD TO CART</button>
+            <button class="button">VIEW DETAILS</button> -->
+
+        </div>
+
+        <div class="product1">
+            <div class="image-container">
+              <img src="static\images\W.jpg" alt="Laptop">
+            </div>
+            <div class="box-title"><h1>Oven</h1></div>
+            <div class="price">29,990</div>
+            <div class="description">
+              For ovens, whether microwave or conventional, typical problems include heating element failures that lead to uneven cooking, door seal issues that cause heat loss, and control board malfunctions, which affect temperature regulation. In microwaves, a faulty magnetron can result in the appliance not heating. Regular cleaning and ensuring the door seals properly are key to keeping ovens in good working condition.
+            </div>
+            <!-- <button class="button">ADD TO CART</button>
+            <button class="button">VIEW DETAILS</button> -->
+        </div>
+
+        <div class="product1">
+            <div class="image-container">
+              <img src="static\images\acd.jpeg" alt="Laptop">
+            </div>
+            <div class="box-title">Air Conditionior</div>
+            <div class="price">40,990</div>
+            <div class="description">
+            vital for cooling indoor spaces by removing heat and humidity. Common issues involve refrigerant leaks that reduce cooling efficiency, clogged filters that restrict airflow, compressor failures that prevent proper cooling, and thermostat malfunctions that lead to inaccurate temperature control. Regular filter cleaning, debris removal from outdoor units, and checking refrigerant levels can help prolong an AC’s lifespan.
+            </div>
+            <!-- <button class="button">ADD TO CART</button> -->
+            <button class="button"><a href="{{ url_for('Services') }}"></a>VIEW DETAILS</button>
+        </div>
+
+        <div class="product1">
+          <div class="image-container">
+            <img src="static\images\WM.jpg" alt="Washing Machine">
+          </div>
+          <div class="box-title">Washing Machine</div>
+          <div class="price">35,000</div>
+          <div class="description">
+            Washing machines are essential for cleaning clothes. Common issues include the drum not spinning, water leakage due to worn hoses, and drainage problems from clogged pumps. Regular maintenance includes cleaning the lint filter and checking the hoses for wear. Many washing machines are designed with large drum capacities, making them ideal for families. Innovations in washing technology, such as inverter motors, ensure quieter operation and longer-lasting performance, making laundry less of a chore.
+          </div>
+          <!-- <button class="button">ADD TO CART</button>
+          <button class="button">VIEW DETAILS</button> -->
+
+      </div>
+
+      <div class="product1">
+          <div class="image-container">
+            <img src="static\images\VC.jpg" alt="Vacuum Cleaner">
+          </div>
+          <div class="box-title">Vacuum Cleaner</div>
+          <div class="price">10,500</div>
+          <div class="description">
+            Vacuum cleaners are essential for maintaining cleanliness. Issues often include clogged filters, loss of suction, or motor failure. Regularly cleaning filters and checking for blockages can improve their efficiency. Some vacuum cleaners are equipped with attachments that make cleaning tight spaces, curtains, and furniture easier. With the latest technology, many models also offer bagless designs and energy efficiency, catering to eco-conscious users.
+          </div>
+          <!-- <button class="button">ADD TO CART</button>
+          <button class="button">VIEW DETAILS</button> -->
+
+      </div>
+
+
+    </div>
+
+    <footer>
+      <div class="footer-container">
+          <div class="logo-section">
+              <img id="photo-logo" src="static\images\parag_logo2.png" alt="logo" style="width: 20%; height: 35%;">
+          </div>
+          <div class="footer-links">
+              <div class="column">
+                  <p><a href="{{ url_for('form_k') }}"> WANTS TO ENQUIRE</a></p>
+                  
+              </div>
+              <div class="column">
+                  <p><a href="{{ url_for('Services') }}">SERVICES</a></p>
+                  <p><a href="{{ url_for('Products') }}">PRODUCTS</a></p>
+              </div>
+              <div class="column">
+                  <p>SHOWCASE</p>
+                  <p><a href="{{ url_for('Blog') }}">BLOG</a></p>
+                  <p><a href="{{ url_for('Testimonial') }}">TESTIMONIAL</a></p>
+              </div>
+              <div class="column">
+                  <p><a href="{{ url_for('about') }}">ABOUT US</a></p>
+                  <p><a href="{{ url_for('contact') }}">CONTACT US</a></p>
+                  <p>AFFILIATES</p>
+                  <p>RESOURCES</p>
+              </div>
+              <div class="column">
+                  <p><a href="https://www.linkedin.com/in/karan-nagure/">DEVELOPERS</a></p>
+              </div>
+          </div>
+          <div class="social-media">
+              <a href="https://www.linkedin.com/in/karan-nagure/"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="copyright">
+              <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+  
+</body>
+</html>
